@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_dependency 'spina/admin/conferences/accounts/application_controller'
-
 module Spina
   module Admin
     module Conferences
@@ -18,7 +16,7 @@ module Spina
           def edit; end
 
           def update
-            if @user.update(institution_params)
+            if @user.update(public_user_params)
               redirect_to admin_conferences_accounts_public_users_path, success: t('.saved')
             else
               render :edit
@@ -37,7 +35,7 @@ module Spina
           private
 
           def public_user_params
-            params.require(:admin_conferences_accounts_public_user).permit(:name)
+            params.require(:admin_conferences_accounts_public_user).permit(:email, :first_name, :last_name, :institution)
           end
 
           def set_breadcrumb
@@ -48,9 +46,9 @@ module Spina
             @tabs = %w[details]
           end
 
-          def set_institution
+          def set_user
             @user = PublicUser.find(params[:id])
-            add_breadcrumb @user.name
+            add_breadcrumb @user.full_name
           end
         end
       end
