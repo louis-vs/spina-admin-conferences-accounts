@@ -4,6 +4,7 @@ require 'spina'
 require 'spina/admin/conferences/accounts/version'
 require 'spina/admin/conferences/accounts/engine'
 require 'rails-i18n'
+require 'devise'
 
 # Spina CMS.
 # @see https://www.spinacms.com Spina website
