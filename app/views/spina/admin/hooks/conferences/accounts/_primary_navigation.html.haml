@@ -1,0 +1,9 @@
+%li{ class: ('active' if %w[public_users].include? controller_name) }
+  = link_to admin_conferences_accounts_public_users_path do
+    = icon 'users-outline'
+    = t 'spina.admin.conferences.accounts.navigation_title'
+    = icon 'caret-right'
+
+    %ul
+      %li{ class: ('active' if %w[public_users].include? controller_name) }
+        = link_to t('spina.admin.conferences.accounts.subnavigation_title'), admin_conferences_accounts_public_users_path
