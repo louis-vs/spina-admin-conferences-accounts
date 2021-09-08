@@ -1,0 +1,24 @@
+.page-form
+  .page-form-group
+    .page-form-label
+      = Spina::Admin::Conferences::Accounts::PublicUser.human_attribute_name :email
+    .page-form-content
+      = f.text_field :email
+  .page-form-group
+    .page-form-label
+      = Spina::Admin::Conferences::Accounts::PublicUser.human_attribute_name :first_name
+    .page-form-content
+      = f.text_field :first_name
+  .page-form-group
+    .page-form-label
+      = Spina::Admin::Conferences::Accounts::PublicUser.human_attribute_name :last_name
+    .page-form-content
+      = f.text_field :last_name
+  .page-form-group
+    .page-form-label
+      = Spina::Admin::Conferences::Accounts::PublicUser.human_attribute_name :institution
+    .page-form-content
+      = f.text_field :institution
+
+- unless @user.new_record?
+  .pull-right= link_to t('spina.permanently_delete'), admin_conferences_accounts_public_user_path(@user), method: :delete, data: { confirm: t('.delete_confirmation', name: @user.full_name) }, class: 'button button-link button-danger'

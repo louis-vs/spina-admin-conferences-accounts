@@ -3,7 +3,21 @@ en:
     admin:
       conferences:
         accounts:
+          navigation_title: Manage Accounts
+          subnavigation_title: Public Users
+          index:
+            name: Name
+            empty: There are no public users.
+          form_details:
+            name: Name
 
   activerecord:
     models:
+      spina/admin/conferences/accounts/public_user:
+        one: Public User
+        other: Public Users
     attributes:
+      spina/admin/conferences/accounts/public_user:
+        first_name: First Name
+        last_name: Last Name
+        institution: Institution

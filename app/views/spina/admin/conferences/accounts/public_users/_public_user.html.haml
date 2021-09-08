@@ -1,0 +1,11 @@
+%tr
+  %td
+    = link_to public_user.email, edit_admin_conferences_accounts_public_user_path(public_user)
+  %td
+    = public_user.full_name
+  %td
+    = public_user.institution
+  %td.nowrap.align-right
+    = link_to edit_admin_conferences_accounts_public_user_path(public_user), class: 'button button-link' do
+      = icon 'pencil-outline'
+      = t '.edit'

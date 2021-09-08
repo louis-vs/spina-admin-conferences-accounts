@@ -1,0 +1,12 @@
+.well
+  .table-container
+    %table.table
+      %thead
+        %tr
+          %th= Spina::Admin::Conferences::Accounts::PublicUser.human_attribute_name :email
+          %th= t '.name'
+          %th= Spina::Admin::Conferences::Accounts::PublicUser.human_attribute_name :institution
+          %th
+
+      %tbody
+        = render @users, message: t('.empty')
