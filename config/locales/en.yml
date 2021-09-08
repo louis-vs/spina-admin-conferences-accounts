@@ -1,0 +1,9 @@
+en:
+  spina:
+    admin:
+      conferences:
+        accounts:
+
+  activerecord:
+    models:
+    attributes:

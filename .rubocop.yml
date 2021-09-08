@@ -1,0 +1,17 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+  Exclude:
+    - test/dummy/db/schema.rb
+    - test/dummy/db/migrate/*.rb
+    - node_modules/**/*
+    - tmp/**/*
+    - vendor/**/*
+    - .git/**/*
+
+Rails/FilePath:
+  EnforcedStyle: arguments
