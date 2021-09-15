@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spina-admin-conferences-accounts (0.1.0)
+    spina-admin-conferences-accounts (0.1.1)
       babel-transpiler (~> 0.7)
       devise (~> 4.8)
       rails (~> 6.1)

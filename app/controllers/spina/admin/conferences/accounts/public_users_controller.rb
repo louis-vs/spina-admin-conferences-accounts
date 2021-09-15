@@ -36,8 +36,7 @@ module Spina
           private
 
           def public_user_params
-            params.require(:admin_conferences_accounts_public_user).permit(:email, :first_name, :last_name,
-                                                                           :institution)
+            params.require(:public_user).permit(:email, :first_name, :last_name, :institution)
           end
 
           def set_breadcrumb
