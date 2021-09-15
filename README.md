@@ -1,4 +1,8 @@
 # Spina::Admin::Conferences::Accounts
+
+![Rails tests](https://github.com/louis-vs/spina-admin-journal/workflows/Verify/badge.svg?branch=master&event=push)
+![codecov](https://codecov.io/gh/louis-vs/spina-admin-conferences-accounts/branch/master/graph/badge.svg?token=xMLjBbQXPb)
+
 *Accounts* is a plugin for [Spina](https://www.spinacms.com/), a content management system built in [Ruby on Rails](http://rubyonrails.org/). Designed to be used with [`spina-admin-conferences`](https://github.com/jmalcic/spina-admin-conferences) and [`spina-admin-journal`](https://github.com/louis-vs/spina-admin-journal), it provides an admin interface to manage public user accounts with [devise](https://github.com/heartcombo/devise).
 
 ## Usage
