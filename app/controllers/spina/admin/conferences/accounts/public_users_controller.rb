@@ -4,6 +4,7 @@ module Spina
   module Admin
     module Conferences
       module Accounts
+        # Manages user accounts in Spina admin.
         class PublicUsersController < ApplicationController
           before_action :set_breadcrumb
           before_action :set_tabs, except: %i[index destroy]
@@ -35,7 +36,8 @@ module Spina
           private
 
           def public_user_params
-            params.require(:admin_conferences_accounts_public_user).permit(:email, :first_name, :last_name, :institution)
+            params.require(:admin_conferences_accounts_public_user).permit(:email, :first_name, :last_name,
+                                                                           :institution)
           end
 
           def set_breadcrumb

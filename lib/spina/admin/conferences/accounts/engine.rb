@@ -4,6 +4,7 @@ module Spina
   module Admin
     module Conferences
       module Accounts
+        # The plugin engine. Loads the plugin in Spina.
         class Engine < ::Rails::Engine
           config.before_initialize do
             ::Spina::Plugin.register do |plugin|

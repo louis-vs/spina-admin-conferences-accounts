@@ -4,6 +4,7 @@ module Spina
   module Admin
     module Conferences
       module Accounts
+        # Helper methods
         module ApplicationHelper
         end
       end

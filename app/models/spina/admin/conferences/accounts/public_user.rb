@@ -4,6 +4,7 @@ module Spina
   module Admin
     module Conferences
       module Accounts
+        # User accounts
         class PublicUser < ApplicationRecord
           # Include default devise modules. Others available are:
           # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable

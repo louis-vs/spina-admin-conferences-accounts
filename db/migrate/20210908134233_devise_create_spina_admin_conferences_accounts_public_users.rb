@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class DeviseCreateSpinaAdminConferencesAccountsPublicUsers < ActiveRecord::Migration[6.1] # :nodoc:
-  def change
+  def change # rubocop:disable Metrics/MethodLength
     create_table :spina_admin_conferences_accounts_public_users do |t|
       ## Database authenticatable
       t.string :email,              null: false, default: ''
