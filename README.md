@@ -1,5 +1,5 @@
 # Spina::Admin::Conferences::Accounts
-*Accounts* is a plugin for [Spina](https://www.spinacms.com/), a content management system built in [Ruby on Rails](http://rubyonrails.org/). Designed to be used with [`spina-admin-conferences`]() and [`spina-admin-journal`](), it provides an admin interface to manage public user accounts with [devise]().
+*Accounts* is a plugin for [Spina](https://www.spinacms.com/), a content management system built in [Ruby on Rails](http://rubyonrails.org/). Designed to be used with [`spina-admin-conferences`](https://github.com/jmalcic/spina-admin-conferences) and [`spina-admin-journal`](https://github.com/louis-vs/spina-admin-journal), it provides an admin interface to manage public user accounts with [devise](https://github.com/heartcombo/devise).
 
 ## Usage
 The plugin adds a single menu to Spina's primary navigation, which allows you to manage a devise user stored as `PublicUser`.
