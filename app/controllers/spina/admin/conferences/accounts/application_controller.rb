@@ -6,6 +6,8 @@ module Spina
       module Accounts
         # Custom controller for accounts plugin. Sets the layout and adds a flash type.
         class ApplicationController < AdminController
+          helper ::Spina::Engine.routes.url_helpers
+
           add_flash_types :success
 
           layout :admin_layout, only: %i[new edit]
